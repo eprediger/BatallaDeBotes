@@ -23,9 +23,9 @@ reglas enumeradas a continuación.
 
 ##Barcos
 
-	• Lancha
+	• ~~Lancha~~
 	
-	• Bote a Remo
+	• ~~Bote a Remo~~
 	
 	• Yate
 
