@@ -1,8 +1,8 @@
 package fiuba.algo3.modelo;
 
-public class Bote extends Embarcacion {
+public class Lancha extends Embarcacion {
 
-	public Bote() {
+	public Lancha() {
 		// TODO Auto-generated constructor stub
 	}
 
