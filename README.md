@@ -5,15 +5,15 @@ casillero), se requiere una cuadrícula con filas numeradas de 1 a 8 y letras de
 Implementar las clases Bote y Tablero con los siguientes métodos, que provea las siguientes
 funcionalidades:
 
-	a) Agregar un bote en un casillero
+- [x]	a) Agregar un bote en un casillero
 	
-	b) Saber si un casillero está ocupado o no
+- [ ]	b) Saber si un casillero está ocupado o no
 	
-	c) Sacar un bote de un casillero (hundirlo)
+- [ ]	c) Sacar un bote de un casillero (hundirlo)
 	
-	d) Reiniciar el tablero con todos los casilleros vacíos.
+- [ ]	d) Reiniciar el tablero con todos los casilleros vacíos.
 	
-	e) Ubicar 8 botes en lugares aleatorios del tablero
+- [ ]	e) Ubicar 8 botes en lugares aleatorios del tablero
 
 
 # Batalla de Botes II
@@ -23,20 +23,20 @@ reglas enumeradas a continuación.
 
 ##Barcos
 
-	• ~~Lancha~~
+- [x]	• Lancha
 	
-	• ~~Bote a Remo~~
+- [x]	• Bote a Remo
 	
-	• Yate
+- [x]	• Yate
 
 ##Disparos
 
-	• Convencional
+- [ ]	• Convencional
 	
-	• Misil
+- [ ]	• Misil
 
 ##Reglas
 
-	• Los yates solo son afectados solo por los Misiles.
+- [ ]	• Los yates solo son afectados solo por los Misiles.
 	
-	• Se necesitan dos disparos convencionales para hundir una Lancha.
+- [ ]	• Se necesitan dos disparos convencionales para hundir una Lancha.
