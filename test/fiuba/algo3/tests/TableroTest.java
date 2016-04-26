@@ -8,21 +8,22 @@ import fiuba.algo3.modelo.Tablero;
 
 public class TableroTest {
 
+	public Tablero tablero;
+	
 	@Before
 	public void setUp() throws Exception {
+	
+		this.tablero = new Tablero();
 	}
 
 	@Test
 	public void testElTableroSeCreaVacio() {
 
-		Tablero tablero = new Tablero();
 		Assert.assertEquals(0, tablero.cantidadDeBotes());
 	}
 	
 	@Test
 	public void testAgregarBoteSumaUnBoteAlTablero() {
-		
-		Tablero tablero = new Tablero();
 		
 		tablero.agregarBoteEnPosicion(1,'A');
 		
@@ -32,40 +33,36 @@ public class TableroTest {
 	@Test
 	public void testEliminarBoteRestaUnBoteAlTablero() {
 		
-		Tablero tablero = new Tablero();
-		
 		tablero.agregarBoteEnPosicion(1,'A');
 		
 		Assert.assertEquals(1, tablero.cantidadDeBotes());
 		
-		tablero.removerBoteEnPosicion(1,'A');
+		tablero.agregarBoteEnPosicion(4,'E');
 		
-		Assert.assertEquals(0, tablero.cantidadDeBotes());
+		Assert.assertEquals(2, tablero.cantidadDeBotes());
+		
+		tablero.hundirBoteDePosicion(1,'A');
+		
+		Assert.assertEquals(1, tablero.cantidadDeBotes());
 	}
 	
 	@Test
 	public void testUnCasilleroSinBoteDevuelveQueEstaVacio() {
 		
-		Tablero tablero = new Tablero();
-		
-		Assert.assertFalse(tablero.laPosicionTieneUnBote(1,'A'));
+		Assert.assertFalse(tablero.hayUnBoteEnLaPosicion(1,'A'));
 	}
 	
 	@Test
 	public void testUnCasilleroConBoteDevuelveQueEstaLleno() {
-		
-		Tablero tablero = new Tablero();
-		
+
 		tablero.agregarBoteEnPosicion(1,'A');
 		
-		Assert.assertTrue(tablero.laPosicionTieneUnBote(1,'A'));
+		Assert.assertTrue(tablero.hayUnBoteEnLaPosicion(1,'A'));
 	}
 	
 	@Test
 	public void testAlVaciarElTableroNoTieneBotes() {
-		
-		Tablero tablero = new Tablero();
-		
+
 		tablero.agregarBoteEnPosicion(1,'A');
 		
 		tablero.reiniciarTablero();

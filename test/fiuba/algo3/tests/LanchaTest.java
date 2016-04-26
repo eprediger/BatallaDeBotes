@@ -15,5 +15,4 @@ public class LanchaTest {
 	public void testLancha() {
 		fail("Not yet implemented");
 	}
-
 }

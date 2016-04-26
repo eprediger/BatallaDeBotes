@@ -15,5 +15,4 @@ public class YateTest {
 	public void testYate() {
 		fail("Not yet implemented");
 	}
-
 }

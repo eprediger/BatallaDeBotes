@@ -15,5 +15,4 @@ public class BoteTest {
 	public void testBote() {
 		fail("Not yet implemented");
 	}
-
 }
