@@ -7,11 +7,11 @@ funcionalidades:
 
 - [x]	a) Agregar un bote en un casillero
 	
-- [ ]	b) Saber si un casillero está ocupado o no
+- [x]	b) Saber si un casillero está ocupado o no
 	
-- [ ]	c) Sacar un bote de un casillero (hundirlo)
+- [x]	c) Sacar un bote de un casillero (hundirlo)
 	
-- [ ]	d) Reiniciar el tablero con todos los casilleros vacíos.
+- [x]	d) Reiniciar el tablero con todos los casilleros vacíos.
 	
 - [ ]	e) Ubicar 8 botes en lugares aleatorios del tablero
 
