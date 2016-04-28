@@ -33,29 +33,35 @@ public class Tablero {
 				if (mapa.get(new Posicion(i,letra)).esUnaEmbarcacion()){
 					
 					totalDeBotes++;
-				};
+				}
 			}
 		}
 		return totalDeBotes;
 	}
 
-	public void agregarBoteEnPosicion(int fila, char columna) {
+	public void agregarEmbarcacionEnPosicion(Embarcacion embarcacion, Posicion posicion) {
 		
-		mapa.put(new Posicion(fila,columna), new Bote());
+		if (mapa.get(posicion).esUnaEmbarcacion()) {
+			
+			throw new YaHayBoteException();
+		}
+		else mapa.put(posicion, embarcacion);
 	}
 
-	public void hundirBoteDePosicion(int fila, char columna) {
-
-		Posicion posicion = new Posicion(fila,columna);
+	public void hundirEmbarcacionDePosicion(Posicion posicion) {
 		
-		mapa.remove(posicion);
+		if (mapa.get(posicion).esUnaEmbarcacion()) {
+			
+			mapa.remove(posicion);
+			mapa.put(posicion, new Agua());
+		}
 		
-		mapa.put(posicion, new Agua());
+		else throw new NoHayBoteException();
 	}
 
-	public boolean hayUnBoteEnLaPosicion(int fila, char columna) {
+	public boolean hayUnBoteEnLaPosicion(Posicion posicion) {
 		
-		return (this.mapa.get(new Posicion(fila, columna)).esUnaEmbarcacion());
+		return (this.mapa.get(posicion).esUnaEmbarcacion());
 	}
 
 	public void reiniciarTablero() {
