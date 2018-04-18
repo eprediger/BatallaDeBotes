@@ -21,7 +21,7 @@ funcionalidades:
 Extender el juego Batalla de Botes para que soporte tanto los tipos de botes y disparos como las
 reglas enumeradas a continuación.
 
-##Barcos
+## Barcos
 
 - [x]	• Lancha
 	
@@ -29,13 +29,13 @@ reglas enumeradas a continuación.
 	
 - [x]	• Yate
 
-##Disparos
+## Disparos
 
 - [ ]	• Convencional
 	
 - [ ]	• Misil
 
-##Reglas
+## Reglas
 
 - [ ]	• Los yates solo son afectados solo por los Misiles.
 	
